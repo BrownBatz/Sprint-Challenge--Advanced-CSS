@@ -1,1 +1,35 @@
 // Mixins Here
+.navSecStyle(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid @nav-border;
+}
+
+.navStyles{
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    a{
+        font-size: 1.5rem;
+        text-decoration: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: black;
+    }
+}
+
+.btnStyles(@width, @bgcolor, @radius, @borderwidth, @color, @bcolor){
+    width: @width;
+    background-color: @bgcolor;
+    border-radius: @radius;
+    border: @borderwidth solid @bcolor;
+    color: @color;
+
+}
